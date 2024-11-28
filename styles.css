@@ -1,0 +1,114 @@
+/* general styling */
+html, body {
+    font-family: Arial, sans-serif; /* set font for the entire page */
+    height: 100%; /* ensure that the height of the page is 100% of the viewport */
+    margin: 0; /* remove default margin */
+    padding: 0; /* remove default padding */
+    background-image: url('6011.jpg'); /* path to your background image */
+    background-size: cover; /* ensure the background image covers the entire page */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat; /* prevent the image from repeating */
+    background-attachment: fixed; /* keep the image fixed while scrolling */
+    color: #fff; /* set text color to white for readability */
+  }
+  
+  /* container for content */
+  .container {
+    width: 80%; /* set container width */
+    margin: 50px auto; /* center the container with margin */
+    text-align: center; /* center-align the content */
+    background-color: rgba(0, 0, 0, 0.9); /* black background with transparency for readability */
+    padding: 20px; /* add padding inside the container */
+    border-radius: 10px; /* round the corners */
+  }
+  
+  form input {
+    padding: 10px; /* add padding inside input fields */
+    margin: 5px; /* space between input fields */
+    width: 200px; /* set width of input fields */
+  }
+  
+  form button {
+    padding: 10px 20px; /* add padding inside the button */
+    background-color: #4CAF50; /* green background for the button */
+    color: white; /* set text color to white */
+    border: none; /* remove default border */
+    cursor: pointer; /* change cursor to pointer on hover */
+  }
+  
+  form button:hover {
+    background-color: #45a049; /* slightly darker green on hover */
+  }
+  
+  h1 {
+    color: #fff; /* set header text color to white */
+  }
+  
+  h2 {
+    margin-top: 30px; /* space above the h2 element */
+  }
+  
+  canvas {
+    margin-top: 20px; /* space above the canvas */
+    border: 1px solid #ccc; /* border around the canvas */
+  }
+  
+  /* media queries for responsiveness */
+  
+  /* for screens smaller than 768px (tablets and smaller) */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%; /* increase container width on smaller screens */
+      margin-top: 30px; /* space above the container */
+    }
+  
+    form input {
+      width: 100%; /* make input fields take full width */
+    }
+  
+    form button {
+      width: 100%; /* make button take full width */
+      padding: 12px 20px; /* increase button padding */
+    }
+  
+    h1 {
+      font-size: 2rem; /* reduce font size for small screens */
+    }
+  
+    h2 {
+      font-size: 1.5rem; /* adjust font size for h2 */
+    }
+  }
+  
+  /* for screens smaller than 480px (mobile phones) */
+  @media (max-width: 480px) {
+    .container {
+      width: 95%; /* make container width nearly full screen */
+      margin-top: 20px; /* space above the container */
+    }
+  
+    form input {
+      width: 100%; /* make input fields full width */
+      padding: 12px; /* increase padding for mobile */
+    }
+  
+    form button {
+      width: 100%; /* make button full width */
+      padding: 12px; /* increase padding */
+    }
+  
+    h1 {
+      font-size: 1.8rem; /* adjust font size for very small screens */
+    }
+  
+    h2 {
+      font-size: 1.3rem; /* adjust font size for h2 */
+    }
+  
+    canvas {
+      max-width: 100%; /* ensure canvas is responsive */
+      height: auto; /* maintain aspect ratio */
+    }
+  }
+  
+  
